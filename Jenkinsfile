@@ -1,4 +1,4 @@
-@Library(['piper-lib', 'piper-lib-os']) _
+
 
 properties([[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '3']]]);
 
