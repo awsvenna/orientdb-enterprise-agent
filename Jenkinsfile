@@ -8,10 +8,7 @@ node {
 	stage('build')   {
 		sh "rm -rf *"
 
-		dockerExecute(
-				dockerImage:'ldellaquila/maven-gradle-node-zulu-openjdk8:1.1.0',
-				dockerWorkspace: '/orientdb-enterprise-${env.BRANCH_NAME}'
-		) {
+		 {
 
 			try{
 				sh "rm -rf orientdb-studio"
